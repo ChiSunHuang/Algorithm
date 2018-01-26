@@ -4,3 +4,7 @@
 2018-01-26 19:38
 
 git初始化，目前已经包括union_find案例中的quick_find算法，quick_union算法，weight_quick_union算法。
+
+2018-01-26 21:11
+
+完成了选择排序和插入排序
