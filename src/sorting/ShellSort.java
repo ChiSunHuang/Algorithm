@@ -3,7 +3,7 @@ package sorting;
 import java.util.Arrays;
 
 public class ShellSort {
-	
+	//时间复杂度突破了O(n^2) 比较次数比N^2小 和递增序列有关系。但是还没有到达线性指数级别
 	public static void sort(int[] a) {
 		int N = a.length;
 		int h = 0;

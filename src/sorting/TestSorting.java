@@ -43,5 +43,24 @@ public class TestSorting {
 		  System.out.println(Arrays.toString(mergeSort_input));
 		  System.out.println("======= merge sort ========");
 		  
+		  System.out.println("======= merge sort BU========");
+		  int[] mergeSortBU_input = {3,5,7,2,6,7,6,5,4,1,9,8};
+		  System.out.println(Arrays.toString(mergeSortBU_input));
+		  
+		  MergeSort_BU.sort(mergeSortBU_input);
+		  
+		  System.out.println(Arrays.toString(mergeSortBU_input));
+		  System.out.println("merge count is " + MergeSort_BU.count);
+		  System.out.println("======= merge sort BU ========");
+		  
+		  System.out.println("======= quick sort ========");
+		  int[] quickSort_input = {3,5,7,2,6,7,6,5,4,1,9,8};
+		  System.out.println(Arrays.toString(quickSort_input));
+		  
+		  QuickSort.sort(quickSort_input);
+		  
+		  System.out.println(Arrays.toString(quickSort_input));
+		  System.out.println("======= quick sort ========");
+		  
 	}
 }
