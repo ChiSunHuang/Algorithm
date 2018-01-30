@@ -1,6 +1,7 @@
 package sorting;
 
 import java.util.Arrays;
+import java.util.Stack;
 
 public class TestSorting {
 
@@ -61,6 +62,27 @@ public class TestSorting {
 		  
 		  System.out.println(Arrays.toString(quickSort_input));
 		  System.out.println("======= quick sort ========");
+		  
+		  System.out.println(Arrays.toString(mergeSortBU_input));
+		  System.out.println("merge count is " + MergeSort_BU.count);
+		  System.out.println("======= merge sort BU ========");
+		  
+		  System.out.println("======= MaxPQ test ========");
+		  MaxPQ pq = new MaxPQ<>(16);
+		  int[] MaxPQTest_input = {3,5,7,2,6,7,6,5,4,1,9,8};
+		  System.out.println(Arrays.toString(MaxPQTest_input));
+		  for(int i : MaxPQTest_input) {
+			  pq.insert(i);
+		  }
+		  Stack stack = new Stack();
+		  while(!pq.isEmpty()) {			 
+			  stack.push(pq.delMax());
+		  }
+		  while(!stack.isEmpty()) {			 
+			  System.out.print(stack.pop() + " ");			  
+		  }
+		  System.out.println();
+		  System.out.println("======= MaxPQ test ========");
 		  
 	}
 }
