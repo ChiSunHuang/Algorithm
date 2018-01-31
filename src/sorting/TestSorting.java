@@ -84,5 +84,14 @@ public class TestSorting {
 		  System.out.println();
 		  System.out.println("======= MaxPQ test ========");
 		  
+		  System.out.println("======= heap sort ========");
+		  int[] heapsort_input = {3,5,7,2,6,7,6,5,4,1,9,8};
+		  System.out.println(Arrays.toString(heapsort_input));
+		  
+		  HeapSort.sort(heapsort_input);
+		  
+		  System.out.println(Arrays.toString(heapsort_input));
+		  System.out.println("======= heap sort ========");
+		  
 	}
 }
