@@ -93,5 +93,17 @@ public class TestSorting {
 		  System.out.println(Arrays.toString(heapsort_input));
 		  System.out.println("======= heap sort ========");
 		  
+		  
+		  
+		  System.out.println("======= Bentley-McIlroy 3-way sort ========");
+		  Integer[] QuickBentleyMcIlroy_input = {3,3,3,2,3,3,3,3,2,3,3,3};
+		  System.out.println(Arrays.toString(QuickBentleyMcIlroy_input));
+		  
+		  QuickBentleyMcIlroy.sort(QuickBentleyMcIlroy_input);
+		  
+		  System.out.println(Arrays.toString(QuickBentleyMcIlroy_input));
+		  System.out.println(QuickBentleyMcIlroy.count);
+		  System.out.println("======= Bentley-McIlroy 3-way sort ========");
+		  
 	}
 }
